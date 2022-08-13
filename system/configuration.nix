@@ -132,6 +132,7 @@
   system.autoUpgrade.allowReboot = true;
 
   programs.zsh.enable = true;
+  programs.noisetorch.enable = true;
 
   # Enable docker
   virtualisation.docker.enable = true;

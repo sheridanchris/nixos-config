@@ -10,11 +10,15 @@
     firefox
     mailspring
     alacritty
-    vscode
-    exa
     bitwarden
-    dotnet-sdk
     notion-app-enhanced
+
+    # Programming
+    dotnet-sdk
+    vscode
+
+    # CLI tools
+    exa
   ];
 
   programs.git = {
