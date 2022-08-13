@@ -12,6 +12,7 @@
     alacritty
     bitwarden
     notion-app-enhanced
+    spotify
 
     # Programming
     dotnet-sdk
@@ -25,6 +26,20 @@
     enable = true;
     userName  = "Christian Sheridan";
     userEmail = "christiansheridan@outlook.com";
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableAutosuggestions = true;
+    enableSyntaxHighlighting = true;
+    shellAliases = {
+      ls = "exa -l --icons --group-directories-first";
+      la = "exa -la --icons --group-directories-first";
+    };
+    history = {
+      size = 1000;
+      path = "${config.xdg.dataHome}/zsh/history";
+    };
   };
 
   xdg.configFile.alacritty = {
