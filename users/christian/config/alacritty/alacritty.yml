@@ -1,0 +1,7 @@
+font:
+  normal:
+    family: JetBrains Mono
+  size: 15
+
+shell:
+  program: zsh
