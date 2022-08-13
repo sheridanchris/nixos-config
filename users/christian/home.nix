@@ -33,12 +33,17 @@
     enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
     shellAliases = {
-      ls = "exa -l --icons --group-directories-first";
-      la = "exa -la --icons --group-directories-first";
+      ls = "exa -l --icons --group-directories-first --header --git";
+      la = "exa -la --icons --group-directories-first --header --git";
     };
     history = {
       size = 1000;
       path = "${config.xdg.dataHome}/zsh/history";
+    };
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "agnoster";
     };
   };
 

@@ -22,10 +22,6 @@
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true; # Enable network manager
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Set your time zone.
   time.timeZone = "America/North_Dakota/Beulah";
 
@@ -52,6 +48,9 @@
       sddm.enable = true;
     };
   };
+
+  # Enable gnome-keyring because certain apps require it.
+  services.gnome.gnome-keyring.enable = true;
 
   # Configure NVIDIA
   hardware.opengl.enable = true;
@@ -101,31 +100,13 @@
     htop
     gzip
     neofetch
+    gnome3.gnome-tweaks
   ];
 
   fonts.fonts = with pkgs; [
-    jetbrains-mono
     twemoji-color-font
+    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
   ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   # Enable automatic upgrades
   system.autoUpgrade.enable = true;
