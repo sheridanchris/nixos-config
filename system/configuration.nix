@@ -105,7 +105,8 @@
 
   fonts.fonts = with pkgs; [
     twemoji-color-font
-    (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+    jetbrains-mono
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
   # Enable automatic upgrades
