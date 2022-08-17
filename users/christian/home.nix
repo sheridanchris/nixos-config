@@ -16,6 +16,9 @@
 
     # Programming
     dotnet-sdk
+    nodejs
+    node2nix
+    nodePackages.typescript   
     vscode
     insomnia
 
