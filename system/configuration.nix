@@ -100,7 +100,6 @@
     htop
     gzip
     neofetch
-    gnome3.gnome-tweaks
   ];
 
   fonts.fonts = with pkgs; [
@@ -110,8 +109,8 @@
   ];
 
   # Enable automatic upgrades
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
+  # system.autoUpgrade.enable = true;
+  # system.autoUpgrade.allowReboot = true;
 
   programs.zsh.enable = true;
   programs.noisetorch.enable = true;

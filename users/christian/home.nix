@@ -17,6 +17,7 @@
     # Programming
     dotnet-sdk
     vscode
+    insomnia
 
     # CLI tools
     exa
