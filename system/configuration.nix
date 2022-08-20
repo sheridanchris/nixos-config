@@ -109,7 +109,7 @@
   ];
 
   # Enable automatic upgrades
-  # system.autoUpgrade.enable = true;
+  system.autoUpgrade.enable = true;
   # system.autoUpgrade.allowReboot = true;
 
   programs.zsh.enable = true;
