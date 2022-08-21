@@ -100,6 +100,7 @@
     htop
     gzip
     neofetch
+    docker-compose
   ];
 
   fonts.fonts = with pkgs; [
