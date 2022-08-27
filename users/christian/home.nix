@@ -13,6 +13,9 @@
     bitwarden
     notion-app-enhanced
     spotify
+    flameshot
+    ark
+    unrar
 
     # Programming
     dotnet-sdk
@@ -21,6 +24,7 @@
     nodePackages.typescript   
     vscode
     insomnia
+    python37
 
     # CLI tools
     exa
